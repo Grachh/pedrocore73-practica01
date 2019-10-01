@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #67666e;
+    background-image: url('../img/fondoaws.jpg');
+}
+
+/* Formularios */
+
+form {
+    background-color: white;
+}
