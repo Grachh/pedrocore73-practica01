@@ -19,6 +19,29 @@ hr {
     margin-top: 0.5em;
 }
 
+button {
+    background-color: #008489;
+    color: white;
+    border: 1px solid #008489;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    transition: all 400ms ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: #008489;
+    cursor: pointer;
+}
+
+button[disabled] {
+    background-color: rgba(0, 132, 137, 0.3);
+    border: 1px solid rgba(0, 132, 137, 0.3);
+    color: white;
+    cursor: not-allowed;
+}
+
 /* Layout */
 
 .fila {
@@ -37,6 +60,11 @@ hr {
 .col-100.check {
     flex-direction: row;
     align-items: center;
+}
+
+.col-100.buttons {
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .col-50 {
@@ -72,4 +100,28 @@ input {
 
 input[type="checkbox"] {
     margin-right: 1em;
+}
+
+/* Modals */
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modal {
+    background-color: white;
+    width: 60vw;
+    height: 80vh;
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0.5em;
+    overflow: auto;
 }
