@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test formulario</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="fila">
-            <div class="col-100 check">
+            <div class="col-100 check" id="check" onclick="openModal()">
                 <input type="checkbox" id="legal">
                 <label for="legal">
                     Acepto expresamente el tratamiento
@@ -53,7 +53,7 @@
         </div>
         <div class="fila">
             <div class="col-100 buttons">
-                <button disabled>Crear cuenta</button>
+                <button disabled id="account" onclick="createAccount()">Crear cuenta</button>
             </div>
         </div>
     </form>
@@ -112,9 +112,16 @@
         </div>
         <div class="fila">
             <div class="col-100 buttons">
-                <button>Acepto</button>
+                <button onclick="closeModal()">Acepto</button>
             </div>
         </div>
     </div>
+    <div id="welcome" class="fila">
+        <div class="col-100">
+            <h1>Bienvenido</h1>
+            <hr>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
